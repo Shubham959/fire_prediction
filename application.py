@@ -8,8 +8,8 @@ from flask import Flask, render_template,request
 application = Flask(__name__)
 app = application
 
-ridge_model = pickle.load(open('Fire_Prediction/models/ridge.pkl','rb'))
-standard_scaler = pickle.load(open('Fire_Prediction/models/scaler.pkl','rb'))
+ridge_model = pickle.load(open('models/ridge.pkl','rb'))
+standard_scaler = pickle.load(open('models/scaler.pkl','rb'))
 
 
 @app.route("/index")
