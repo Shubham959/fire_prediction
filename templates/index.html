@@ -4,9 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+            margin-top: 100px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <h1>This is my Home Page</h1>
-    
+    <h1>🔥 Fire Prediction System 🔥</h1>
+    <form action="/predict_data" method="get">
+        <button type="submit">Predict Fire</button>
+    </form>
 </body>
 </html>
